@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+}
+
+body.default {
+  --bg: #ffffff;
+  --main: #009688;
+  --secondary: #0cb366;
+  --white: #ffffff;
+  --inverted: #ffffff;
+  --gray: #666666;
+  --gray-light: #999999;
+  --gray-real-light: #eeeeee;
+}
+
+body.dark {
+  --bg: #333333;
+  --main: #222222;
+  --secondary: #e2e2e2;
+  --white: #ffffff;
+  --inverted: #555555;
+  --gray: #dddddd;
+  --gray-light: #999999;
+  --gray-real-light: #eeeeee;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.header {
+  background: var(--main);
+  color: var(--white);
+}
+
+.header-info {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.header-action {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  color: var(--white);
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.65;
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 8px solid var(--white);
+}
+
+.tab.icon {
+  flex: 0;
+  font-size: 2rem;
+  padding-bottom: 0.4rem;
+}
+
+.list {
+  list-style: none;
+  padding: 1.5rem;
+}
+
+.list-item {
+  border-bottom: 2px solid var(--gray-real-light);
+  padding-bottom: 0.8rem;
+}
+
+.list-item-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.list-item-img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.list-item-info {
+  flex: 1;
+  padding: 1rem;
+}
+
+.list-item-name {
+  font-size: 1.2rem;
+}
+
+.list-item-message {
+  color: var(--gray-light);
+}
+
+.list-item-news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item-time {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.list-item-msgs {
+  background: var(--secondary);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: var(--inverted);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
